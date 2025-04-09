@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                     echo 'Jenkins is installing project dependances'
                     ls -la
-                    npm i
+                    npm ci
                     echo 'Jenkins is creating the build'
                     npm run build
                     echo 'end'
