@@ -32,6 +32,7 @@ pipeline {
                 sh '''
                   echo "lancement des tests"
                   test -f dist/index.html
+                  npm run test
                 '''
             }
         }
